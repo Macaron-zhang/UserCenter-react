@@ -62,11 +62,13 @@ declare namespace API {
   };
 
   type LoginParams = {
-    username?: string;
-    password?: string;
+    // NOTE : 选中字段 SHIFT + F6 可以全局替换，寻找用到这个字段的地方，方便快捷
+    userAccount?: string;
+    userPassword?: string;
     autoLogin?: boolean;
     type?: string;
   };
+
 
   type ErrorResponse = {
     /** 业务约定的错误码 */
